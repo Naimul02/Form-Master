@@ -1,26 +1,30 @@
 import "./App.css";
+import GrandPa from "./components/GrandPa/GrandPa";
 // import HookForm from "./components/HookForm/HookForm";
-import ReusableForm from "./components/ReusableForm/ReusableForm";
+// import ReusableForm from "./components/ReusableForm/ReusableForm";
 // import RefForm from "./components/RefForm/RefForm";
 // import SimpleForm from "./components/SimpleForm/SimpleForm";
 // import StatefulForm from "./components/StatefulForm/StatefulForm";
 
 function App() {
-  const handleSignUpSubmit = (data) => {
-    console.log("sign up data : ", data);
-  };
+  // const handleSignUpSubmit = (data) => {
+  //   console.log("sign up data : ", data);
+  // };
 
-  const handleUpdateProfile = (data) => {
-    console.log("update profile : ", data);
-  };
+  // const handleUpdateProfile = (data) => {
+  //   console.log("update profile : ", data);
+  // };
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>Form Master</h1>
+
+      <GrandPa></GrandPa>
+
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
-      <ReusableForm formTitle={"Sign UP"} handleSubmit={handleSignUpSubmit}>
+      {/* <ReusableForm formTitle={"Sign UP"} handleSubmit={handleSignUpSubmit}>
         <div>
           <h2>Sign Up </h2>
           <p>Please sign up right now</p>
@@ -32,11 +36,11 @@ function App() {
         handleSubmit={handleUpdateProfile}
       >
         {/* eta children props hisebe pathano hobe */}
-        <div>
+      {/* <div>
           <h2>Update Profile</h2>
           <p>Always keep your profile updated</p>
-        </div>
-      </ReusableForm>
+        </div> */}
+      {/* </ReusableForm>  */}
     </>
   );
 }
